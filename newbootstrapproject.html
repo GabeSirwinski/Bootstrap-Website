@@ -69,7 +69,17 @@
         }
 
         .crd1.is-visible {
-          animation: comeUp 1s linear forwards;
+          animation: comeUp .6s linear forwards, fadeIn .6s linear forwards;
+        }
+        
+        .crd:hover {
+          animation: expandtilt 1.5s ease-in-out;
+        }
+
+        @keyframes expandtilt {
+          from {transform: skewY(0)  <!-- HERE YOU ARE FIX THIS -->
+          }
+          to {transform: skewY()}
         }
 
         
@@ -91,7 +101,7 @@
         }
 
         @keyframes comeUp {
-          from {transform: translateY(30%)
+          from {transform: translateY(50%)
           } 
           to {transform: translateY(0%)}
         }
@@ -104,11 +114,11 @@
         }
 
     </style>
-    <title>Hello, world!</title>
+    <title>GS</title>
   </head>
   <body>
     <!--NAV BAR-->
-    <nav class="navbar navbar-expand navbar-light bg-secondary text-white fixed-top">
+    <nav class="navbar navbar-expand navbar-dark bg-info text-white fixed-top pl-5">
         <a class="navbar-brand" href="#">GS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -130,16 +140,32 @@
 
     <!-- END NAV BAR -->
 
-    <div id="home" class="jumbotron jumbotron-fluid">
+    <div id="home" class="jumbotron jumbotron-fluid text-center">
         <div class="container">
-            <h2><br><br></h2>
+            <h2><br><br><br></h2>
           <h3 class="display-4">Welcome</h3>
-          <p class="lead">Gabriel Sirwinski - Software Developer based in Los Angeles, CA.</p>
+          <p class="lead">Gabe Sirwinski - Portfolio<br></p>
+        </div>
+      </div>
+      
+    
+      <div class="container pt-2 pb-5">
+        <div class="row">
+          <div class="col-sm-8 bg-light crd3">
+            <h3 class="display-4 text-left"><br></h3>
+          <p class="lead mx-5 text-left">My name is Gabe and I am a software developer in Los Angeles, CA.<br><br>My main languages are Python and SQL(with Oracle, MySQL, MS SQL Server), but I am fluent in other languages as well (C#, HTML/CSS, JavaScript). <br><br>Feel free to look around at my various software projects or contact me if you have any questions.<br><br></p>
+          </div>
+          <div class="col-sm-4 bg-light crd2">
+            <img src="gabe.jpg" class="ml-4 my-4" alt="" style="max-width: 84%;">
+          </div>
         </div>
       </div>
 
 
-      <div class="container">
+
+
+
+      <div class="container-fluid">
         <div class="row">
           <div class="col-sm my-2">
             <div class="card" style="width: 100%;">
@@ -162,7 +188,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Design</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-secondary">Button</a>
+                  <a href="#" class="btn btn-info">Button</a>
                 </div>
               </div>
           </div>
@@ -190,7 +216,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Connect</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-secondary">Contact</a>
+                  <a href="#" class="btn btn-info">Contact</a>
                 </div>
               </div>
           </div>
@@ -218,7 +244,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Build</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-secondary">Button</a>
+                  <a href="#" class="btn btn-info">Button</a>
                 </div>
               </div>
           </div>
@@ -254,7 +280,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Front-end</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-secondary">See Front-end Projects</a>
+                  <a href="#" class="btn btn-info">See Front-end Projects</a>
                 </div>
               </div>
           </div>
@@ -282,7 +308,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Python</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-secondary">See Python Projects</a>
+                  <a href="#" class="btn btn-info">See Python Projects</a>
                 </div>
               </div>
           </div>
@@ -310,7 +336,7 @@
                 <div class="card-body">
                   <h5 class="card-title">C#</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-secondary">See C# Projects</a>
+                  <a href="#" class="btn btn-info">See C# Projects</a>
                 </div>
               </div>
           </div>
