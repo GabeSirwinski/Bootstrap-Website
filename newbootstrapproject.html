@@ -94,13 +94,17 @@
         }
 
         .navbar {
-          animation: comeDown .5s linear forwards;
+          animation: comeDown 1.5s linear forwards;
         }
 
         @keyframes comeDown {
           from {transform: translateY(-100%)
           }
           to {transform: translateY(0%)}
+        }
+
+        .display-4, .lead {
+          animation: fadeIn 2s linear forwards;
         }
 
         @keyframes fadeIn {
@@ -270,24 +274,24 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-sm my-2">
+          <div class="col-sm">
             <div class="card crd1 show-on-scroll border border-info" style="width: 100%;">
-                <svg class="pl-4 show-on-scroll" width="18rem" height="100%">
-                    <g>
-                     <title>background</title>
-                     <rect fill="#fff" id="canvas_background" height="272" width="322" y="-1" x="-1"/>
-                     <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-                      <rect fill="url(#gridpattern)" stroke-width="2" y="0" x="0" height="100%" width="100%"/>
-                     </g>
-                    </g>
-                    <g>
-                     <title>Layer 1</title>
-                     <ellipse ry="58" rx="55.5" class="svg_3 show-on-scroll" cy="79.453125" cx="140.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
-                     <ellipse stroke="#000" ry="5" rx="40" class="svg_10 show-on-scroll" cy="39.453125" cx="140" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
-                     <ellipse stroke="#000" ry="6" rx="56.5" class="svg_11 show-on-scroll" cy="79.453125" cx="140.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
-                     <ellipse ry="4" rx="40.5" class="svg_12 show-on-scroll" cy="119.453125" cx="140.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
-                    </g>
-                   </svg>
+              <svg class="pl-4" width="290" height="180" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                 <title>background</title>
+                 <rect fill="#fff" id="canvas_background" height="202" width="292" y="-1" x="-1"/>
+                 <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                  <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+                 </g>
+                </g>
+                <g>
+                 <title>Layer 1</title>
+                 <rect stroke="#000" rx="4" class="svg_3 show-on-scroll" height="73" width="153" y="53.453124" x="71.5" stroke-width="1.5" fill="#fff"/>
+                 <rect stroke="#000" rx="3" class="svg_3 show-on-scroll" height="51.999999" width="131.999997" y="62.453125" x="82.500003" fill-opacity="null" stroke-opacity="null" stroke-width="6" fill="#fff"/>
+                 <rect stroke="#000" class="svg_3 show-on-scroll" height="12" width="55" y="129.453125" x="123.5" fill-opacity="null" stroke-opacity="null" stroke-width="5" fill="#fff"/>
+                 <rect stroke="#000" class="svg_3 show-on-scroll" height="3" width="115.999995" y="147.453125" x="93.500005" fill-opacity="null" stroke-opacity="null" stroke-width="4" fill="#fff"/>
+                </g>
+               </svg>
                 <div class="card-body">
                   <h5 class="card-title">Front-end</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
